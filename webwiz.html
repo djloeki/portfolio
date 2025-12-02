@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webwiz</title>
+  <!-- resetten van browsers -->
+  <link rel="stylesheet" href="css/reset.css">
+  <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- JavaScript: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
+    </script>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+  <!-- eigen geschreven css voor jouw html-bestand -->
+  <link rel="stylesheet" href="css/style.css">
+ <img src="/portfolio/assets/images/AlanLogo2.png" alt="" class="rounded mx-auto d-block" width="20%">
+
+ 
+</head>
+<body>
+  <h1 class="text-center text-white">Project: Webwiz</h1>
+  <div class="container">
+  <aside class="sidebar">
+    
+  <nav class="navbar">
+    <ul>
+      <li><a class="nav-link text-white " href="/portfolio/home.html">Home</a></li><br>
+      <li><a class="nav-link text-white " href="/portfolio/personal.html">Over mij</a></li><br>
+      <li><a class="nav-link text-white " href="/portfolio/skills.html">Skills</a></li><br>
+      <li><a class="nav-link text-white " href="/portfolio/opleiding.html">Opleiding en ervaring</a></li><br>
+      <li><a class="nav-link text-white " href="/portfolio/project.html">Projecten</a></li><br>
+      <li><a class="nav-link text-white active" aria-current="page" href="/portfolio/contact.html">Contact</a></li><br>
+    </ul>
+  </nav>
+</aside>
+
+<main class="content">
+<h2><strong>Inhoud</strong></h2>
+<li>
+  <ul><a href="#opdracht">Opdracht</ul></a>
+  <ul><a href="#Cisco">Cisco Packect Tracer</a></ul>
+  <ul><a href="#racklayout">Rack Lay-out</a></ul>
+  <ul><a href="#patchpanel">PatchPanel Excel</a></ul>
+  <ul><a href="#aankoop">Aankoop document</a></ul>
+</li>
+<div>
+  <h2 id="Opdracht">Opdracht en uitleg van project</h2>
+  <br>
+  <p><h3>Situatieschets:</h3> <br>
+    De firma Webwiz geeft de opdracht om voor hun nieuwbouw een netwerk uit te tekenen volgens een professionele setting <br>
+    De volgende informatie wordt meegegeven: <br></p>
+  <li>
+    <ul>-Er is een valse vloer aanwezig in het hele gebouw (30 cm ruimter eronder).</ul>
+    <ul>-Hoogte tussen vloer en plafond is 4 meter.</ul>
+    <ul>-24 werknemers die elk hun eigen bureau en/of werkplek hebben.</ul>
+    <ul>-De firma beschikt over 20 desktops en 10 laptops(waarvan 6 ervan ook uitgeleend kunnen worden)</ul>
+    <ul>-Alles laptops dienen draadloos te kunnen werken in heel het gebouw.</ul>
+    <ul>-Op elke werkplek/bureau wordt een VoIP telefoon voorzien.</ul>
+    <ul>-De werkplekken en bureau's worden verspreid over 6 kantoren in het gebouw</ul>
+    <ul>-In elk kantoor staat een MFP(Multi functional Printer).</ul>
+  </li>
+  <p><h3>Bijkomende situatie's en opdrachten tijdens het ontwerp: <br></h3></p>
+  <li>
+    <ul>-Nog een last-minute werknemer aangenomen en 1 extra desktop hiervoor, graag op het netwerk aansluiten.</ul>
+    <ul>-Sommige werknemers met laptops klagen over de dekking van het wifi netwerk. Oplossing?</ul>
+    <ul>-Er is besloten om dockin stations te voorzien voor mensen die met een laptop werken.</ul>
+    <ul>-Een gebuiker klaagt over netwerkproblemen, hoe identifeer ik de locatie van de aansluiting hiervan op de switch</ul>
+    <ul>-De directeur heeft een nieuwe printer gekocht en wil dit aansluiten op het netwerk.</ul>
+    <ul>-Sommige werknemers denken iets van IT te weten, waardoor ze aan de switch komen en dingen veranderen/versteken. Oplossing voor veiligheid?</ul>
+    <br>
+  </li>
+  
+</div>
+<div><h2 id="Cisco">Cisco Packet Tracer</h2>
+  <img src="/portfolio/assets/images/webwizpkt.png" alt="" width="70%">
+  <figcaption>Bekabelingsplan in Cisco Packet Tracer.</figcaption>
+  <br>
+  <p><h3>Uitwerking kabelplan in het programma "Cisco Packet Tracer"</h3></p>
+  <p>Verloop van ontwerp in Packet Tracer: <br><br>
+  We ontwerpen een grondplan waarop we de kabels trekken in een plattegrond van het gebouw.
+  We voorzien de aansluitingen en dergelijke vanuit de "Server room" tot aan de aansluitingen in elk kantoor. <br>
+  We zorgen hiervoor ook dat de kabels zoveel mogelijk bij elkaar zijn zodat we niet teveel gaten moeten maken in de muren en zo. <br>
+  We bepalen waar elke aansluiting moet komen om de bureau's te voorzien en alsook de plaatsing van de Access Points om zeker te zijn dat het hele gebouw wifi dekking heeft.
+  Als laatste sluiten wij alle kabels aan op een patchpanel, zodat we overzichtelijk kunnen werken aan een schema(Patchpanel-schema) die later handig gaat zijn om bepaalde aansluiting te identificeren.</p>
+  
+</div>
+<div><h2 id="Racklayout">Rack Lay-out</h2>
+  <img src="/portfolio/assets/images/Rack Layout.png" alt="" width="70%">
+  <figcaption>Uitgetekende rack lay-out.</figcaption>
+  <br>
+  <p> Met dit document kunnen we kijken hoeveel onderdelen dat we nodig hebben in onze rack(vermelden van in beslag genomen units en alsook nog beschikbare units).<br>
+    Hierop wordt ook vermeld welke toestellen verbonden zijn met elkaar en waar de bekabelingen zich bevinden en via welke aansluitingen. <br>
+    Voor een gedetailleerde beschijving van alle aansluitingen, kan je terecht bij het Patchpanel-schema in Excel.
+  </p>
+</div>
+<div><h2 id="patchpanel">Patchpanel Excel</h2>
+  <img src="/portfolio/assets/images/patchplan.png" alt="" width="70%">
+  <figcaption>Patchplan uitgewerkt in een Excelbestand.</figcaption>
+  <br>
+  <p>In dit Excel bestand documenteren wij alle kabels die aangesloten zijn op ons systeem, zowel vanuit de aansluitingspunten in de kantoren tot aan de patchpanel 
+    als vanuit de patchpanel naar de switch en/of routers.</p>
+</div>
+<div><h2 id="aankoop">Aankoop document</h2>
+  <img src="/portfolio/assets/images/factuurwebwiz.png" alt="" width="70%">
+  <figcaption>Voorbeeld van een aankoopdocument met alle nodige materialen.</figcaption>
+  <br>
+  <p>Dit is een voorbeeld van een aankoopdocument die we aan onze client bezorgen waarin beschreven staat welke toestellen en materialen nodig hebben om die project te realiseren.</p>
+</div>
+<br><br>
+
+</main>
+
+
+<footer class="text-center text-white">
+    <p >©2025 Alan Lau</p>
+</footer>
+</body>
